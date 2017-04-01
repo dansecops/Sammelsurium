@@ -1,1 +1,1 @@
-msfconsole -r listenerScript
+msfconsole -r listenerScript.rc
