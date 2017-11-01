@@ -1,0 +1,5 @@
+route del default;
+iproute del default;
+ip route del default;
+sysctl -w net.ipv4.tcp_timestamps=0;
+sysctl -w kernel.threads-max=1;
