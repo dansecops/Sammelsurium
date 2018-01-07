@@ -1,2 +1,0 @@
-https://github.com/Ridter/Pentest/tree/master/note
-https://github.com/aemaeth2501/pentest-wiki

